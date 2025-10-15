@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Day8_card-hover</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            h2{
+                text-align:center;
+            }
+            .card {
+                transition: all 0.3s ease; /* アニメーションの滑らかさ */
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                background-color:white;
+            }
+            .card:hover {
+                transform: translateY(-10px); /* 少し上に浮く */
+                box-shadow: 0 6px 16px rgba(0,0,0,0.2); /* 影を濃くする */
+                background-color: #f7f9fa;
+            }
+            .card-title{
+                color: #333;
+                background-color: #f7f9fa;
+            }
+            .card:hover .card-title{
+                color: #007bff;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <section>
+                <h2>カードを横並びにする構造を書いてみる</h2>
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="Day7.html" class="card-link text-decoration-none text-reset">
+                                <div class="card">
+                                    <img src="img/image1.jpg" class="card-img-top" alt="サンプル1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">タイトル1</h5>
+                                        <p class="card-text">説明文1</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="img/image2.jpg" class="card-img-top" alt="サンプル2">
+                                <div class="card-body">
+                                    <h5 class="card-title">タイトル2</h5>
+                                    <p class="card-text">説明文2</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="img/image3.jpg" class="card-img-top" alt="サンプル3">
+                                <div class="card-body">
+                                    <h5 class="card-title">タイトル3</h5>
+                                    <p class="card-text">説明文3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
