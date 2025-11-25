@@ -1,0 +1,118 @@
+/* 共通デザイン設定 */
+body {
+    background-color: #f7f7f7;
+    margin:40px;
+}
+
+.row {
+  display: flex;
+  align-items: stretch;
+}
+
+.col-md-6 {
+  display: flex;
+}
+h1,h2,h3 {
+    font-weight:700;
+    font-family: "M plus 1up",Arial, sans-serif;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+}
+
+.navbar {
+    font-weight: 600;
+}
+
+/* ページごとの設定 */
+
+/* #region Day9 */
+.Day9-h1 {
+  margin-top: 90px;
+}
+.Day9-card {
+  display: flex;
+  flex-direction: row; /* 横方向に配置 */
+  align-items: center; /* 縦方向中央揃え */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin: 20px auto;
+}
+
+.Day9-card img {
+  width: 40%;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+  max-height: 200px;
+}
+
+.Day9-card .card-body {
+  flex: 1;
+  padding: 15px;
+}
+.day9-header {
+  background-color: #eaf3ff;
+  border-left: 8px solid #007bff;
+  padding: 15px;
+}
+
+/* #endregion Day9ここまで */
+/* #region Day10  */
+.Day10-card {
+  display: flex;
+  flex-direction: row; /* 横方向に配置 */
+  align-items: center; /* 縦方向中央揃え */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #28a745;
+  background-color: #f8fff8;
+  transition: all 0.3s ease;
+}
+
+.Day9-card img,
+.Day10-card img {
+  width: 300px;;
+  border-radius: 10px 0 0 10px;
+}
+
+.Day10-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  background-color: #eaffea;
+}
+
+.Day9-card .card-body,
+.Day10-card .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* ← 文章を上下中央に */
+  padding: 15px;
+}
+
+
+.Day10-h1 {
+  margin-top: 100px;
+  text-align: center;
+  color: #28a745;
+  font-weight: 800;
+}
+/* #endregion Day10 */
